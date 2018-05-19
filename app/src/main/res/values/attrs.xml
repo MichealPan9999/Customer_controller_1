@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="myLayout">
-        <attr name="rowNum" format="integer" />
+        <attr name="rowNum" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"></attr>
     </declare-styleable>
 </resources>
