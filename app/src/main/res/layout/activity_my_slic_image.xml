@@ -6,23 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.panzq.customer_control.MainActivity">
+    tools:context="com.example.panzq.customer_control.activities.MySlicImageActivity">
 
-    <!--
-    <com.example.panzq.customer_control.views.MyImageView
+    <com.example.panzq.customer_control.views.MyLayout
+        android:id="@+id/my_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:background="@drawable/pic1"/>
-        -->
-    <Button
-        android:id="@+id/btn_my_image"
+        android:padding="1dp"
+        app:rowNum="3"
+        ></com.example.panzq.customer_control.views.MyLayout>
+
+    <SeekBar
+        android:id="@+id/sb_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自定义ImageView"/>
-    <Button
-        android:id="@+id/btn_my_slic_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="实现切图功能"/>
+        android:layout_margin="20dp"
+        android:layout_weight="0"
+        android:max="40"
+        android:progress="3"
+        />
+
 </LinearLayout>
